@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Token</title>
+</head>
+<body>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const address = params.get('address') || 'TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh';
+        const symbol = params.get('symbol') || 'USDT';
+        const decimals = parseInt(params.get('decimals')) || 6;
+        const image = params.get('image') || 'https://i.ibb.co/s9HhX5jP/file-00000000b53482468cb1a919f5cc14ff.png';
+
+        // تابع برای افزودن توکن ترون (TronLink)
+        async function addTronToken() {
+            if (window.tronWeb) {
+                try {
+                    // برای TronLink، باید توکن رو به صورت دستی اضافه کرد یا از روش دیگه استفاده کرد
+                    // TronLink متد watchAsset رو نداره، پس کاربر باید دستی اضافه کنه.
+                    // برای بهبود، می‌تونیم آدرس رو به کاربر نمایش بدیم تا دستی اضافه کنه.
+                    document.body.innerHTML = `
+                        <h2>⚠️ Please add token manually in TronLink</h2>
+                        <p><strong>Contract Address:</strong> ${address}</p>
+                        <p><strong>Symbol:</strong> ${symbol}</p>
+                        <p><strong>Decimals:</strong> ${decimals}</p>
+                        <p><img src="${image}" alt="Token Logo" width="100"></p>
+                        <p>Click "Add Token" in your TronLink wallet and enter the contract address above.</p>
+                    `;
+                } catch (e) {
+                    document.body.innerHTML = `<h2>❌ Error: ${e.message}</h2>`;
+                }
+                return;
+            }
+
+            // برای MetaMask و Trust Wallet (EVM)
+            if (window.ethereum) {
+                try {
+                    const wasAdded = await window.ethereum.request({
+                        method: 'wallet_watchAsset',
+                        params: {
+                            type: 'ERC20',
+                            options: {
+                                address: address,
+                                symbol: symbol,
+                                decimals: decimals,
+                                image: image
+                            }
+                        }
+                    });
+                    if (wasAdded) {
+                        document.body.innerHTML = '<h2>✅ Token added successfully!</h2>';
+                    } else {
+                        document.body.innerHTML = '<h2>❌ User rejected the request.</h2>';
+                    }
+                } catch (e) {
+                    document.body.innerHTML = `<h2>❌ Failed to add token: ${e.message}</h2>`;
+                }
+                return;
+            }
+
+            // هیچ کیف پولی نصب نیست
+            document.body.innerHTML = '<h2>⚠️ Please install MetaMask, Trust Wallet, or TronLink.</h2>';
+        }
+
+        addTronToken();
+    </script>
+</body>
+</html>
