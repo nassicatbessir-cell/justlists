@@ -130,3 +130,20 @@
     },
     "timestamp":1611147166000
 }
+        },
+        {
+            "symbol": "USDT",
+            "address": "TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh",
+            "chainId": 1,
+            "decimals": 6,
+            "name": "Tether USD",
+            "logoURI": "https://raw.githubusercontent.com/hoater6-hue/tron-token-assets1/main/assets/trc20/TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh/logo.png"
+        }
+    ],
+    "version": {
+        "patch": 1,
+        "major": 1,
+        "minor": 0
+    },
+    "timestamp": 1611147166000
+            }
