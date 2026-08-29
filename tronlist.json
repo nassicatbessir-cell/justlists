@@ -1,0 +1,20 @@
+{
+  "name": "JustLists TRON Token List",
+  "logoURI": "https://raw.githubusercontent.com/nassicatbessir-cell/justlists/main/assets/trc20/TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh/logo.png",
+  "timestamp": "2026-08-29T00:00:00Z",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "tokens": [
+    {
+      "chainId": 728126428,
+      "address": "TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh",
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "logoURI": "https://raw.githubusercontent.com/nassicatbessir-cell/justlists/main/assets/trc20/TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh/logo.png"
+    }
+  ]
+}
