@@ -6,18 +6,15 @@
 <body>
     <script>
         const params = new URLSearchParams(window.location.search);
-        const address = params.get('address') || 'TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh';
+        const address = params.get('address') || 'TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh';
         const symbol = params.get('symbol') || 'USDT';
         const decimals = parseInt(params.get('decimals')) || 6;
-        const image = params.get('image') || 'https://i.ibb.co/s9HhX5jP/file-00000000b53482468cb1a919f5cc14ff.png';
+        const image = params.get('image') || 'https://gateway.pinata.cloud/ipfs/bafybeihxt2slp3smg3d2qhawkwr4iwhhna4w4huh3254r6c33qmtkmbhxi';
 
         // تابع برای افزودن توکن ترون (TronLink)
         async function addTronToken() {
             if (window.tronWeb) {
                 try {
-                    // برای TronLink، باید توکن رو به صورت دستی اضافه کرد یا از روش دیگه استفاده کرد
-                    // TronLink متد watchAsset رو نداره، پس کاربر باید دستی اضافه کنه.
-                    // برای بهبود، می‌تونیم آدرس رو به کاربر نمایش بدیم تا دستی اضافه کنه.
                     document.body.innerHTML = `
                         <h2>⚠️ Please add token manually in TronLink</h2>
                         <p><strong>Contract Address:</strong> ${address}</p>
