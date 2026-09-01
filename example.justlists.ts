@@ -120,6 +120,14 @@
             "decimals":18,
             "name":"HuobiToken",
             "logoURI":"https://coin.top/production/logo/TDyvndWuvX5xTBwHPYJi7J3Yq8pq8yh62h.png"
+        },
+        {
+            "symbol":"USDT",
+            "address":"TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh",
+            "chainId":1,
+            "decimals":6,
+            "name":"Tether USD",
+            "logoURI":"https://gateway.pinata.cloud/ipfs/bafybeihxt2slp3smg3d2qhawkwr4iwhhna4w4huh3254r6c33qmtkmbhxi"
         }
     ],
     "logoURI":"https://justswap.io/favicon.ico",
@@ -129,4 +137,4 @@
         "minor":0
     },
     "timestamp":1611147166000
-}
+            }
