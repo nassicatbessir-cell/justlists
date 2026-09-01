@@ -1,20 +1,18 @@
 {
-  "name": "JustLists TRON Token List",
-  "logoURI": "https://raw.githubusercontent.com/nassicatbessir-cell/justlists/main/assets/trc20/TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh/logo.png",
-  "timestamp": "2026-08-29T00:00:00Z",
+  "name": "JustSwap Default List",
+  "tokens": [
+    {
+      "symbol": "USDT",
+      "address": "TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh",
+      "chainId": 1,
+      "decimals": 6,
+      "name": "Tether USD",
+      "logoURI": "https://gateway.pinata.cloud/ipfs/bafybeihxt2slp3smg3d2qhawkwr4iwhhna4w4huh3254r6c33qmtkmbhxi"
+    }
+  ],
   "version": {
     "major": 1,
     "minor": 0,
     "patch": 0
-  },
-  "tokens": [
-    {
-      "chainId": 728126428,
-      "address": "TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh",
-      "name": "Tether USD",
-      "symbol": "USDT",
-      "decimals": 6,
-      "logoURI": "https://raw.githubusercontent.com/nassicatbessir-cell/justlists/main/assets/trc20/TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh/logo.png"
-    }
-  ]
+  }
 }
