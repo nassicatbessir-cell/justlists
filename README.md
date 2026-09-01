@@ -6,10 +6,10 @@ This repository contains a custom token list for the TRON network, following the
 
 - **Token Name:** Tether USD
 - **Token Symbol:** USDT
-- **Contract Address:** `TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh`
+- **Contract Address:** `TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh`
 - **Network:** TRON Mainnet
 - **Decimals:** 6
-- **Logo:** [View Logo](https://i.ibb.co/s9HhX5jP/file-00000000b53482468cb1a919f5cc14ff.png)
+- **Logo:** [View Logo](https://gateway.pinata.cloud/ipfs/bafybeihxt2slp3smg3d2qhawkwr4iwhhna4w4huh3254r6c33qmtkmbhxi)
 
 ## How to Use
 
@@ -17,8 +17,8 @@ You can add this token list to any DApp that supports the JustLists standard by 
 
 ## Links
 
-- [View on Tronscan](https://tronscan.org/#/token/TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh)
-- [Logo URL](https://i.ibb.co/s9HhX5jP/file-00000000b53482468cb1a919f5cc14ff.png)
+- [View on Tronscan](https://tronscan.org/#/token/TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh)
+- [Logo URL](https://gateway.pinata.cloud/ipfs/bafybeihxt2slp3smg3d2qhawkwr4iwhhna4w4huh3254r6c33qmtkmbhxi)
 
 ## License
 
