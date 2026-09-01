@@ -1,20 +1,18 @@
 {
-    "name": "My Custom Token List",
+    "name": "JustSwap Default List",
     "tokens": [
         {
             "symbol": "USDT",
-            "address": "TPHjxcwuDiAJtnySMo99ou7Rbqo8cqVhsh",
-            "chainId": 728126428,
+            "address": "TPHjxwvDiAJtnySMo99ou7Rbqo8cqVhsh",
+            "chainId": 1,
             "decimals": 6,
             "name": "Tether USD",
-            "logoURI": "https://i.ibb.co/s9HhX5jP/file-00000000b53482468cb1a919f5cc14ff.png"
+            "logoURI": "https://gateway.pinata.cloud/ipfs/bafybeihxt2slp3smg3d2qhawkwr4iwhhna4w4huh3254r6c33qmtkmbhxi"
         }
     ],
-    "logoURI": "https://i.ibb.co/s9HhX5jP/file-00000000b53482468cb1a919f5cc14ff.png",
     "version": {
         "patch": 1,
         "major": 1,
         "minor": 0
-    },
-    "timestamp": 1611147166000
+    }
 }
