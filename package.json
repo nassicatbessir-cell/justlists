@@ -1,0 +1,53 @@
+{
+  "name": "@default-team-4hohq/demo-api-scalar-galaxy",
+  "version": "0.1.0",
+  "description": "The Scalar Galaxy is an example OpenAPI document to test OpenAPI tools and libraries. It's a fictional universe with fictional planets and fictional data. Get all the data for all planets.",
+  "author": "Demo API Scalar Galaxy",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    },
+    "./*.mjs": {
+      "types": "./dist/esm/*.d.ts",
+      "import": "./dist/esm/*.js",
+      "default": "./dist/esm/*.js"
+    },
+    "./*.js": {
+      "types": "./dist/esm/*.d.ts",
+      "require": "./dist/cjs/*.js",
+      "default": "./dist/cjs/*.js"
+    },
+    "./*": {
+      "types": "./dist/esm/*.d.ts",
+      "import": "./dist/esm/*.js",
+      "require": "./dist/cjs/*.js",
+      "default": "./dist/esm/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "api.md",
+    "SKILL.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && node scripts/finalize-build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.cjs.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "standardwebhooks": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.0"
+  },
+  "license": "Apache-2.0"
+}
