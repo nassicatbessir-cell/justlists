@@ -1,0 +1,8 @@
+{
+  "name": "Tether USD",
+  "symbol": "USDT",
+  "decimals": 6,
+  "logo": "logo.png",
+  "description": "Test token with Tether logo",
+  "website": "https://tron.network/usdt"
+}
